@@ -1,0 +1,207 @@
+html {
+  font-size: 18px;
+}
+
+body{
+  font-family: helvetica;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.banner {
+  height: 30rem;
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  justify-content: center;
+}
+.banner h2 {
+  display: none;
+}
+.content {
+  width: 960px;
+  flex-direction: column;
+}
+.top {
+  justify-content: space-between;
+}
+
+li {
+  display: inline;
+  padding-right: 2rem;
+}
+
+nav {
+  background-color: cadetblue;
+  align-content: center;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+
+ nav img {
+   height: 1.5rem;
+   padding-right: 1rem;
+ }
+.slogan {
+  justify-content: flex-end;
+}
+#slogan {
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  text-transform: uppercase;
+  padding: 1.5rem 5rem;
+}
+.main {
+  justify-content: center;
+
+}
+.icons {
+  margin-top: 3rem;
+  justify-content: center;
+}
+.exams, .fittings, .delivery {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 5rem;
+  text-align: center;
+  margin: 0 3rem 0 3rem;
+}
+.exams img {
+  width: 3.5rem;
+}
+.fittings img, .delivery img {
+  width: 5rem;
+}
+.text {
+  margin-top: 3rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.text h1 {
+  background-color: cadetblue;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.one, .two {
+  max-width: 35%;
+  margin: 0 2.5%;
+}
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+footer img {
+  padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .banner {
+    padding: 0;
+    height: 22rem;
+    background-position: right;
+  }
+  .content {
+    width: 100%;
+  }
+  #slogan {
+    margin: 5rem 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 700px){
+  .container {
+    max-width: 100%;
+  }
+  nav p, li {
+    display: none;
+  }
+  .links h2 {
+    display: block;
+  }
+  .links {
+    justify-content: center;
+  }
+  .top {
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+  #slogan {
+    width: 100%;
+    margin: 9rem 0 0 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .icons {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.77rem;
+    margin: 3.77rem 0;
+
+  }
+  .exams, .fittings, .delivery {
+    margin: 0;
+    width: 90px;
+    justify-content: center;
+  }
+  .one, .two {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text{
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .philosophy, .appointments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  .philosophy h1, .appointments h1 {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  .philosophy p, .appointments p {
+    width: 90%;
+    font-size: 0.77rem;
+  }
+  footer span {
+    display: none;
+  }
+  footer img {
+    padding: 4rem 0;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
